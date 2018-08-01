@@ -261,6 +261,13 @@ print("Will you face it?")
 answer = "yes"
 
 def count_items(column_list):
+    """
+    Counts a the unique values from a column and how many itens it have
+    Args:
+        column_list: A list with all values from a column.
+    Returns:
+        Returns the unique values from a column and how many itens it have
+    """
     item_types = set(column_list)
     count_items = list(1 for i in column_list)
     return item_types, count_items
